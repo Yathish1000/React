@@ -30,6 +30,9 @@ class Count extends react.Component {
         this.setState({ num: this.state.num - 1 })
     }
 
+    componentDidUpdate(){
+        console.log("count incred");
+    }
 
     render() {
         return (

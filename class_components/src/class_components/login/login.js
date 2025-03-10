@@ -6,8 +6,12 @@ class Login extends react.Component{
     this.state={
         ShowLogin:false
     }
-
  }
+
+ componentDidUpdate(){
+    alert("Clicked")
+ }
+
  render(){
     return(
         <div>

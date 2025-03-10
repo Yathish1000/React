@@ -5,6 +5,16 @@ import Login from './class_components/login/login'
 
 class App extends React.Component {
 
+  // componentDidMount(){
+  //   alert("welcome to the website")
+  //   console.log("mahadev")
+  // }
+
+  componentDidUpdate(){
+    console.log("updated");
+    
+  }
+
 
   render(){
 
@@ -31,6 +41,7 @@ class App extends React.Component {
 
     return(
       <div>
+        <button onClick={()=>{console.log("hiii")}}>hiii</button>
         {data.map(x=>{
           return(
             <Card n={x.name} g={x.gender}/>
